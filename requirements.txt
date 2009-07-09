@@ -1,0 +1,4 @@
+django-compressor
+BeautifulSoup
+django-mobiladmin
+svn checkout http://typogrify.googlecode.com/svn/trunk/ typogrify
