@@ -1,4 +1,11 @@
-django-compressor
+
 BeautifulSoup
 django-mobiladmin
 svn checkout http://typogrify.googlecode.com/svn/trunk/ typogrify
+svn checkout http://django-tagging.googlecode.com/svn/trunk/ tagging
+svn checkout http://django-syncr.googlecode.com/svn/trunk/ django-syncr
+git clone git://github.com/bjornkri/django-tumblr.git
+svn checkout http://python-tumblr.googlecode.com/svn/trunk/ python-tumblr
+svn checkout http://python-lastfm.googlecode.com/svn/trunk/ python-lastfm
+
+git clone git://github.com/justinlilly/django_compressor.git
