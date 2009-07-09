@@ -4,8 +4,6 @@ from django.contrib.auth.models import User
 from tagging.fields import TagField
 from markdown import markdown
 from django.db.models import permalink
-from threadedcomments.moderation import *
-from threadedcomments.models import PLAINTEXT
 from managers import *
 
 class Section(models.Model):
@@ -132,12 +130,3 @@ class Exit(models.Model):
 		'slug': self.slug })
 	get_absolute_url = permalink(get_absolute_url)
 	
-class ArticleModerator(CommentModerator):
-	akismet 			= True
-	enable_field 		= 'enable_comments'
-	email_notification 	= True
-	auto_close_field	= 'pub_date'
-	close_after			= 30
-	allowed_markup		= [PLAINTEXT]
-
-moderator.register(Article, ArticleModerator)
