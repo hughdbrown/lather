@@ -79,8 +79,13 @@ INSTALLED_APPS = (
     'lather.meowr',
     'lather.search',
 
+    # Blech. I just added these modules directly under lather/
+    # HDB 2009-07-09
     'lather.compressor',
     'lather.typogrify',
+    'lather.tagging',
+    'lather.syncr',
+    'lather.djumblr',
 )
 
 try:
