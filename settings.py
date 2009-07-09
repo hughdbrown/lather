@@ -32,8 +32,8 @@ import django
 DJANGO_ROOT = django.__path__[0]
 PROJECT_ROOT = os.path.dirname(__file__)
 
-MEDIA_URL = '/site-media/'
-MEDIA_ROOT = os.path.realpath(os.path.join(PROJECT_ROOT, "site-media/"))
+MEDIA_URL = '/static/'
+MEDIA_ROOT = os.path.realpath(os.path.join(PROJECT_ROOT, "static/"))
 
 ADMIN_MEDIA_PREFIX = '/media/'
 ADMIN_MEDIA_ROOT = os.path.realpath(os.path.join(DJANGO_ROOT, "contrib/admin/media"))
@@ -74,11 +74,13 @@ INSTALLED_APPS = (
     'django.contrib.admin',
     'django.contrib.markup',
     'django.contrib.flatpages',
+    'mobileadmin',
     
     'lather.meowr',
     'lather.search',
 
     'lather.compressor',
+    'lather.typogrify',
 )
 
 try:
